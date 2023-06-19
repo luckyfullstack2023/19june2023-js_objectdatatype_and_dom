@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+
+        <script>
+            // Lets create a JS object
+            var student1 = {
+             // 1.Property:value;
+                fname:"Lucky",
+                lname:"Khamari",
+                age:23,
+                salary:-2500,
+                address:"nayagarh",
+                qualification:"B.SC",
+                // function defination
+                getMyFullAddress(){ //function defination
+                    console.log("Hii"+this.fname+" "+this.lname+' '+this.age+` `+this.salary);
+                }
+
+            }; //student1 is a type of js object data type
+
+            let student2 = 'lucky khamari nayagarh odisha';
+            // Here student2 is a type of js string data type
+
+            let student3 = 40;
+            // Here student3 is a js number data type
+
+            let student4 = {
+                fname:"second_Lucky",
+                surname:"Happy",
+                age:22,
+                slary:-3000,
+                address:"nayagarh",
+                getAddress(){
+
+                    //every function return something
+                    return this.address;
+                }
+            }
+
+            // How to access these information from js object
+            // object.member
+            console.log(student1.fname);//. is a member selection operator
+            console.log(student1.getMyFullAddress());
+            console.log(student4.fname);
+            console.log(student4.getAddress());
+            
+
+
+
+
+
+            
+        </script>
+    </body>
+</html>
